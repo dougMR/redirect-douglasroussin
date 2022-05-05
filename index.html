@@ -6,8 +6,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Refresh" content="0; url='https://dougroussin.com'" />
         <title>Doug Roussin | redirect</title>
+        <style>
+            :root {
+                --brand-color: #18330f;
+            }
+            body {
+                height: 100vh;
+                background: linear-gradient(rgb(158, 195, 158),rgb(143, 143, 192));
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 90vh;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 16px;
+                color: var(--brand-color);
+            }
+            main a {
+                color: var(--brand-color);
+                font-weight: bold;
+            }
+            #logo-holder {
+                width: 10vw;
+            }
+            .path {
+                fill: var(--brand-color);
+            }
+        </style>
     </head>
     <body>
-        <p>Redirect failed, click <a href="http://dougroussin.com">here</a>.</p>
+        <main>
+            <div id="logo-holder">
+                <svg
+                    version="1.1"
+                    id="logo-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 1000 1000"
+                    style="enable-background: new 0 0 1000 1000"
+                    xml:space="preserve"
+                >
+                    <path
+                        class="path"
+                        d="M500,7.3C227.9,7.3,7.3,227.9,7.3,500S227.9,992.7,500,992.7S992.7,772.1,992.7,500S772.1,7.3,500,7.3z
+M649.5,533.1l-32.4,218.6L471.3,516.9l-56.7,234.8L26,379.3l328,105.3l48.6-234.8l153.9,234.8l40.5-234.8l368.4,396.8L649.5,533.1z
+"
+                    />
+                </svg>
+            </div>
+
+            <p>
+                Redirect failed, click
+                <a href="http://dougroussin.com">here</a>.
+            </p>
+        </main>
     </body>
 </html>
